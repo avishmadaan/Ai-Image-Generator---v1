@@ -1,0 +1,20 @@
+<main>
+  <header class="navbar">
+    <div class="search-container">
+      <input type="text" id="we" placeholder="Generate Image" [(ngModel)]="Search">
+      <button (click)="generateImage()" class="search">Get</button>
+    </div>
+  </header>
+
+  <section class="result">
+    <div class="image-placeholder">
+      <img [src]="image" height="500px" width="500px" title="placeholder">
+    </div>
+  </section>
+
+  <section class="badges">
+    <div class="badge">Trusted by thousands</div>
+    <div class="badge">Secure & Reliable</div>
+    <div class="badge">24/7 Support</div>
+  </section>
+</main>
